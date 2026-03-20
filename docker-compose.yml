@@ -28,7 +28,7 @@ services:
 
       # ── Routeur Uptime Kuma ────────────────────────────────────────────────
       # Accessible sur https://status.kiwinet.me
-      # En-têtes de sécurité appliqués via le middleware secure-headers
+      # En-têtes de sécurité appliqués via le secure-headers dans dynamic.yml (kiwinet-infra)
       - "traefik.http.routers.uptime-kuma.rule=Host(`status.kiwinet.me`)"
       - "traefik.http.routers.uptime-kuma.entrypoints=websecure"
       - "traefik.http.routers.uptime-kuma.tls.certresolver=letsencrypt"
