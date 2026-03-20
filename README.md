@@ -84,15 +84,15 @@ Pas d'`auth-basic` - la page de statut est publique par conception.
 
 ## Monitors configurés
 
-| Monitor            | Type     | Cible                          | Note                    
-|--------------------|----------|--------------------------------|-------------------------
-| Routeur            | HTTP(s)  | `https://*******.kiwinet.me`   |                         
-| Site Principal     | HTTP(s)  | `https://kiwinet.me`           |                         
-| Traefik            | HTTP(s)  | `https://traefik.kiwinet.me`   | HTTP 401 accepté        
-| Plex               | HTTP(s)  | `https://plex.kiwinet.me`      | HTTP 401 accepté        
-| Status             | HTTP(s)  | `https://status.kiwinet.me`    |                         
-| Grafana            | HTTP(s)  | `https://grafana.kiwinet.me`   |                         
-| Minecraft          | TCP Port | `minecraft.kiwinet.me:25565`   | TCP brut, hors Traefik  
+| Monitor            | Type     | Cible                                | Note                    
+|--------------------|----------|--------------------------------------|-------------------------
+| Routeur            | HTTP(s)  | `https://freebox.kiwinet.me:22962`   |                         
+| Site Principal     | HTTP(s)  | `https://kiwinet.me`                 |                         
+| Traefik            | HTTP(s)  | `https://traefik.kiwinet.me`         | HTTP 401 accepté        
+| Plex               | HTTP(s)  | `https://plex.kiwinet.me`            | HTTP 401 accepté        
+| Status             | HTTP(s)  | `https://status.kiwinet.me`          |                         
+| Grafana            | HTTP(s)  | `https://grafana.kiwinet.me`         |                         
+| Minecraft          | TCP Port | `minecraft.kiwinet.me:25565`         | TCP brut, hors Traefik  
 
 Les monitors Traefik et Plex retournent un HTTP 401 (authentification requise). Uptime Kuma est configuré pour accepter ce code comme réponse valide - le service est *up*, mais protégé.
 
