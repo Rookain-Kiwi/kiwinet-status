@@ -1,6 +1,6 @@
 # kiwinet-status
 
-Page de statut publique et surveillance de disponibilité pour `kiwinet.me`  
+Page de statut publique et surveillance de disponibilité pour `Kiwinet`  
 Stack : Uptime Kuma - Let's Encrypt via Traefik - Discord webhook
 
 ---
